@@ -1,0 +1,3 @@
+#!/bin/sh
+SITE=bigtimelicense.com
+rsync -a --exclude .git --exclude deploy --delete ./ $SITE:/var/www/$SITE/
