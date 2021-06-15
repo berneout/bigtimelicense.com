@@ -1,0 +1,57 @@
+/* Font Sizing */
+
+@media all {
+  html {
+    font-size: 2.2vw;
+  }
+}
+
+@media all and (min-width:1000px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width:520px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+/* Content Blocks */
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header[role=banner], main[role=main], footer[role=contentinfo] {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 30rem;
+  padding: 0 2rem;
+  text-rendering: optimizeLegibility;
+}
+
+footer[role=contentinfo] {
+  font-size: 85%;
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+/* Links */
+
+a[href] {
+  border-bottom: 1px dashed #999;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #bb1122;
+}
+
+a:visited {
+  color: #884488;
+}
