@@ -5,13 +5,25 @@ html {
   padding: 0;
 }
 
-body > header, body > main, body > footer {
+body {
   font-family: sans-serif;
   line-height: 1.6;
-  margin: 0 auto;
-  max-width: 30rem;
-  padding: 0 2rem;
   text-rendering: optimizeLegibility;
+}
+
+@media screen {
+  body > header, body > main, body > footer {
+    margin: 0 auto;
+    max-width: 30rem;
+    padding: 0 2rem;
+  }
+}
+
+@media print {
+  body {
+    font-family: serif;
+    font-size: 11pt;
+  }
 }
 
 body > footer {
