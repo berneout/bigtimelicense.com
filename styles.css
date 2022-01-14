@@ -5,7 +5,7 @@ html {
   padding: 0;
 }
 
-header[role=banner], main[role=main], footer[role=contentinfo] {
+body > header, body > main, body > footer {
   font-family: sans-serif;
   line-height: 1.6;
   margin: 0 auto;
@@ -14,7 +14,7 @@ header[role=banner], main[role=main], footer[role=contentinfo] {
   text-rendering: optimizeLegibility;
 }
 
-footer[role=contentinfo] {
+body > footer {
   font-size: 85%;
   margin-top: 1.5rem;
   text-align: right;
