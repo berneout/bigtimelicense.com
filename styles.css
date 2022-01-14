@@ -1,5 +1,3 @@
-/* Content Blocks */
-
 html {
   margin: 0;
   padding: 0;
@@ -12,7 +10,7 @@ body {
 }
 
 @media screen {
-  body > header, body > main, body > footer {
+  body > header, body > main {
     margin: 0 auto;
     max-width: 30rem;
     padding: 0 2rem;
@@ -25,14 +23,6 @@ body {
     font-size: 11pt;
   }
 }
-
-body > footer {
-  font-size: 85%;
-  margin-top: 1.5rem;
-  text-align: right;
-}
-
-/* Links */
 
 a[href] {
   border-bottom: 1px dashed #999;
