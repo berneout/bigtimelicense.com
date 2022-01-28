@@ -1,2 +1,4 @@
 #!/bin/sh
-git ls-files | grep ".html$" | xargs tidy -config tidy.config -m
+for file in *.html versions/*.html; do
+  tidy -config tidy.config -m "$file"
+done
